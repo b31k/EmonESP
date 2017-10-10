@@ -127,6 +127,9 @@ Data in string:pairs can be sent to EmonESP via HTTP API. This is useful to emul
 
 This input process output off led optical sensor **(1000imp/kwh)** can be inputed to EmonESP via GPIO D2 pin.
 
+![LED Sensor setup](docs/nodemcu_led_sensor.png)
+
+
 
 
 ### Save Emoncms server details
