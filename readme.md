@@ -1,7 +1,6 @@
 
-# EmonESP
+# EmonESP testing for extra inputs.
 
-[![Build Status](https://travis-ci.org/openenergymonitor/EmonESP.svg?branch=master)](https://travis-ci.org/openenergymonitor/EmonESP)
 
 ESP8266 WIFI serial to emoncms link
 
@@ -108,7 +107,7 @@ Example return in JSON:
 
 ### 4. Data Input
 
-Data can be inputed to EmonESP via serial UART or HTTP API.
+Data can be inputed to EmonESP via serial UART, HTTP API or GPIO (D2) for optical pulse sensor.
 
 ![input setup](docs/input.png)
 
@@ -123,6 +122,12 @@ Data in serial:pairs string format can be inputed to EmonESP via serial UART **(
 Data in string:pairs can be sent to EmonESP via HTTP API. This is useful to emulate the serial string data function while using the UART for code upload and debug. API example:
 
 `http://<IP-ADDRESS>/input?string=ct1:3935,ct2:325,t1:12.5,t2:16.9,t3:11.2,t4:34.7`
+
+#### GPIO Input
+
+This input process output off led optical sensor **(1000imp/kwh)** can be inputed to EmonESP via GPIO D2 pin.
+
+
 
 ### Save Emoncms server details
 
